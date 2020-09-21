@@ -79,7 +79,9 @@ footer {
 }
 
 .col {
-    background-color: rgb(43, 226, 147);
+    /* background-color: rgb(43, 226, 147); */
+    background-color: rgb(60, 60, 60);
+
     width: 30%;
     margin-bottom: 40px;
 }
