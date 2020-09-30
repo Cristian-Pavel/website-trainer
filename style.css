@@ -40,7 +40,7 @@ header nav {
     
 }
 
-.navbutton {
+.mybutton {
     border: 1px solid white;
     padding: 11px 25px;
     display: inline-block;
@@ -105,6 +105,10 @@ footer {
     font-weight: bold;
 }
 
+.mob-wrapper {
+    display: none;
+}
+
 /* Tablet View */
 @media (max-width: 768px) {
    
@@ -117,10 +121,7 @@ footer {
     }  
     /* - folosit pentru a elimina in modul desktop. E important ca la tag-ul cu Strategic Thinking sa adaug la clasa si hide-desktop-only */
     
-    header {
-        display: block;
-        text-align: center;
-    }
+    
     .header-container {
         position: relative;
     }
@@ -129,6 +130,10 @@ footer {
         padding-top: 40px;
     }
     
+    nav {
+        display: none;
+    }
+
     nav a {
         display: block;
        }
@@ -141,6 +146,27 @@ footer {
         margin-left: 0;
     }
 
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+    /* nu e necesar sa-l mai pun si la mobile pentru ca este activat inca de aici */
+
+    .navbutton {
+        display: block;
+        background-color: rgb(60, 60, 60);
+        border: 1px solid white;
+        padding: 15px;
+        margin-left: -80px; /* am setat valoare negativa pentru ca e position abosolute mai sus la .mob-nav */
+        text-align: center;
+    }
+
 }
 
 /* Mobile View */ 
@@ -151,6 +177,10 @@ footer {
 
     .hide-mobile {
         display: none;
+    }
+
+    .mob-wrapper {
+        display: block;
     }
 
     /* header {
